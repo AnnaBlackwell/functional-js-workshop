@@ -32,14 +32,41 @@
 //     };
 //     module.exports = getShortMessages
 
-  function checkUsersValid(goodUsers) {
-      return function allUsersValid(submittedUsers) {
-      return submittedUsers.every(function(submitted){
-        return goodUsers.some(function(good){
-          return (submitted.id === good.id);
-        });
-      });
-    };
-  };
-    module.exports = checkUsersValid
+  // function checkUsersValid(goodUsers) {
+  //     return function allUsersValid(submittedUsers) {
+  //     return submittedUsers.every(function(submitted){
+  //       return goodUsers.some(function(good){
+  //         return (submitted.id === good.id);
+  //       });
+  //     });
+  //   };
+  // };
+  //   module.exports = checkUsersValid
 
+    var inputWords = ['Apple', 'Banana', 'Apple', 'Durian', 'Durian', 'Durian']
+    
+    console.log(countWords(inputWords))
+    
+    // =>
+    // {
+    //   Apple: 2,
+    //   Banana: 1,
+    //   Durian: 3
+    // }
+
+
+ function countWords(inputWords) {
+      // for each object in the Array
+      // count the number of times each one occurs
+      // add the count to the object in the array
+
+      var num = inputWords.reduce(function(){
+
+      })
+      return 
+
+    }
+
+
+    
+    module.exports = countWords
